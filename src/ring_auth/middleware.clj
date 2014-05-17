@@ -56,7 +56,7 @@
 (defn wrap-auth-session
   "Associates an :auth-session key to the request map an authorization cookie is passed in.  To set an authorization session, simply provide an :auth-session key in the response map (set to nil to delete).
 
-  An authorization session is a map with at least the following keys:
+  An auth session is a map with at least the following keys:
 
     :csrf-token     - A token which can be placed in hidden form fields to thwart CSRF attacks
 
