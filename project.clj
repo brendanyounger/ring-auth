@@ -1,4 +1,4 @@
-(defproject ring-auth "0.1.0"
+(defproject ring-auth "0.1.1-SNAPSHOT"
   :description "Ring middleware that manages authenticated Ring sessions."
   :url "https://github.com/brendanyounger/ring-auth"
   :license {:name "Eclipse Public License"
