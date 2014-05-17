@@ -60,7 +60,7 @@ You can now use HTTPS routes locally and test with `auth-session` appropriately.
 
 ## Suggestions
 
-In general, you should only store user authentication credentials in the auth session.  Permanent user settings and the like should probably be changed in a User datastore.  However, anything stored in the normal Ring `:session` map can be tampered with by third parties, so never store sensitive user information in that session.  In particularly, never trust data in the `:session` map when making authorization decisions.
+In general, you should only store user authentication credentials in the auth session.  Permanent user settings and the like should probably be changed in a User datastore.  However, anything stored in the normal Ring `:session` map can be tampered with by third parties, so never store sensitive user information in that session.  In particular, never trust data in the `:session` map when making authorization decisions.
 
 If any clear breach of security (sending the cookie over HTTP, etc.) occurs, an error will be logged and appropriate action to destroy the session will be taken.  Keep an eye on your logs while developing.
 
