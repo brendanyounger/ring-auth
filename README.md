@@ -16,7 +16,7 @@ The basic usage is as follows
 (def app-routes
   (->
     ...
-    (wrap-auth-session session-store)
+    (wrap-auth-session {:store session-store})
     (wrap-session {:store session-store})))
 ````
 
